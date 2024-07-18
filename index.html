@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <div class="threeD">
+        <video autoplay  muted  loop src="video.mp4" width="400px" height="500px">
+        </video>
+     </div>
+     <div class="form">
+        <h1>Book your charge</h1>
+        <form id="bookingForm">
+            <label for="text">Vechile number:</label>
+            <input type="text">
+            <label for="date">Choose a date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="slot">Choose a slot:</label>
+            <select id="slot" name="slot" required>
+                <option value="">Select a slot</option>
+                <option value="9:00AM-10:00AM">9:00AM-10:00AM</option>
+                <option value="10:00AM-11:00AM">10:00AM-11:00AM</option>
+                <option value="11:00AM-12:00AM">11:00AM-12:00PM</option>
+                <option value="12:00AM-1:00PM">12:00PM-1:00PM</option>
+            </select><br><br>
+            <label for="location">Choose a location:</label>
+            <select id="location" name="location">
+                <option value="">Select a location</option>
+                <option value="">Madhurawada</option>
+                <option value="">Rushikonda</option>
+                <option value="">IT SEZ</option>
+                <option value="">Pendurthi</option>
+            </select>
+            <button type="submit"><a href="Book.html">Book</a></button>
+        </form>
+        <div id="response"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
